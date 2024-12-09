@@ -14,8 +14,3 @@ deployment "two" {
     instances = 8
   }
 }
-
-publish_output "one" {
-  description = "The prefix for deployment one"
-  value       = deployment.one.outputs.prefix
-}

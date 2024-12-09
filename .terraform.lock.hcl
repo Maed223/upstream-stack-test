@@ -1,6 +1,8 @@
+# This file is maintained automatically by "tfstacks providers lock".
+# Manual edits may be lost in future updates.
+
 provider "registry.terraform.io/hashicorp/random" {
-  version     = "3.3.2"
-  constraints = "3.3.2"
+  version = "3.3.2"
   hashes = [
     "h1:H5V+7iXol/EHB2+BUMzGlpIiCOdV74H8YjzCxnSAWcg=",
     "h1:YChjos7Hrvr2KgTc9GzQ+de/QE2VLAeRJgxFemnCltU=",

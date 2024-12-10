@@ -13,7 +13,7 @@ deployment "single" {
 deployment "many" {
   inputs = {
     prefix    = "many"
-    instances = 11
+    instances = 12
     ephemeral_uuid = identity_token.test.jwt
   }
 }

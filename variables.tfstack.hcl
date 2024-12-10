@@ -1,7 +1,13 @@
+variable "prefix" {
+  type = string
+}
+
 variable "instances" {
   type = number
 }
 
-variable "prefix" {
+variable "ephemeral_uuid" {
   type = string
+  ephemeral = true
+  sensitive = true
 }

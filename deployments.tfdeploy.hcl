@@ -1,16 +1,19 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
+identity_token "test" {
+  audience = ["test.workload.identity"]
+}
 
-deployment "one" {
-  variables = {
-    prefix    = "complex"
-    instances = 3
+deployment "single" {
+  inputs = {
+    prefix    = "single"
+    instances = 2
+    ephemeral_uuid = identity_token.test.jwt
   }
 }
 
-deployment "two" {
-  variables = {
-    prefix    = "simple"
-    instances = 8
+deployment "many" {
+  inputs = {
+    prefix    = "many"
+    instances = 11
+    ephemeral_uuid = identity_token.test.jwt
   }
 }

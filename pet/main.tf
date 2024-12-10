@@ -7,19 +7,26 @@ terraform {
   }
 }
 
-variable "instances" {
-  type = number
-}
-
 variable "prefix" {
   type = string
 }
 
-resource "random_pet" "this" {
-  prefix = var.prefix
-  length = var.instances
+variable "ephemeral_uuid" {
+  type = string
+  ephemeral = true
 }
 
-output "x" {
+resource "random_pet" "this" {
+  prefix = var.prefix
+  length = 4
+}
+
+output "name" {
   value = random_pet.this.id
+}
+
+output "ephemeral_uuid" {
+  value = var.ephemeral_uuid
+  ephemeral = true
+  sensitive = true
 }

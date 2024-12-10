@@ -3,7 +3,6 @@
 
 provider "registry.terraform.io/hashicorp/random" {
   version = "3.3.2"
-  url = "https://registry.terraform.io/v1/providers/hashicorp/random/3.3.2/download/linux/amd64"
   hashes = [
     "h1:H5V+7iXol/EHB2+BUMzGlpIiCOdV74H8YjzCxnSAWcg=",
     "h1:YChjos7Hrvr2KgTc9GzQ+de/QE2VLAeRJgxFemnCltU=",

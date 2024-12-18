@@ -15,3 +15,10 @@ deployment "many" {
     instances = 12
   }
 }
+
+publish_output "instances" {
+  description = "number of instances"
+  # assuming deployment emits an output called user
+  value = deployment.single.outputs.instances
+}
+

@@ -18,3 +18,8 @@ component "nulls" {
     null = provider.null.main
   }
 }
+
+output "instances" {
+  type  = number
+  value = component.nulls.instances
+}

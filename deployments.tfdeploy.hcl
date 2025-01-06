@@ -5,14 +5,14 @@ identity_token "test" {
 deployment "single" {
   inputs = {
     prefix    = "single"
-    instances = 2
+    instances = 3
   }
 }
 
 deployment "many" {
   inputs = {
     prefix    = "many"
-    instances = 12
+    instances = 13
   }
 }
 
